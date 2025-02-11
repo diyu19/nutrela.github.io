@@ -1,37 +1,31 @@
-var tl=gsap.timeline({scrollTrigger:{
-    trigger:".about",
-    start:"0% 95%",
-    end:"70% 50%",
-    scrub:true,
-  }  
-})
+var tl = gsap.timeline({scrollTrigger:{
+    trigger: ".about",
+    start: "0% 95%",
+    end: "70% 50%",
+    scrub: true,
+    // markers: true,
+}})
+
 tl.to("#can",{
-    top:"98%",
-    left:"12%",
-    rotate:"30deg",
-    
-},'choclate')
-
-
+    top: "95%",
+    left: "12%",
+    rotate: "30deg"
+}, 'choclate')
 tl.to("#choclate",{
     top:"160%",
     left: "23%"
 }, 'choclate')
-
 tl.to("#choclate2",{
+    width: "25%",
     top:"160%",
-    right:"10%",
-    width:'25%',
-    rotate:"-25deg"
-    
-},'choclate')
-
+    right: "10%",
+    rotate: "-15deg"
+}, 'choclate')
 tl.to("#almod",{
     top:"110%",
     rotate: "130deg",
     left: "70%"
 }, 'choclate')
-
 tl.to("#almod2",{
     top:"110%",
     rotate: "130deg",
@@ -63,3 +57,4 @@ tl2.to("#can",{
     left: "35%",
     rotate: "0deg"
 }, 'can')
+
